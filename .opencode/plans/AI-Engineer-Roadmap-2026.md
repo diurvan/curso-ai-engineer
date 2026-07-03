@@ -903,23 +903,28 @@ Cada lab se evalúa (0-5 pts cada criterio):
 ```
 curso-ai-engineer/
 ├── README.md
-├── AI-Engineer-Roadmap-2026.md
-├── 01-token-economy/
-│   ├── README.md
-│   ├── lab-01-dashboard-tokens.md
-│   └── lab-02-haiku-vs-sonnet.md
-├── 02-spec-driven-development/
-│   ├── README.md
-│   └── ...
-├── ...
-├── final-project/
-│   ├── README.md
-│   └── rubric.md
-├── certification/
-│   ├── template-certificate.md
-│   └── verification-system.md
-└── resources/
-    └── links.md
+├── .opencode/plans/
+│   └── AI-Engineer-Roadmap-2026.md        ← Plan maestro (este archivo)
+├── scripts/                               ← Guiones de grabación (video tutorial)
+│   └── modulo-1/
+│       ├── sesion-1.1-token-economy.md
+│       ├── sesion-1.2-primer-agente.md    (por crear)
+│       └── sesion-1.3-multi-agente.md     (por crear)
+├── slides/                                ← Diapositivas (Reveal.js Markdown)
+│   └── modulo-1/
+│       └── sesion-1.1-token-economy.md
+├── labs/                                  ← Ejercicios prácticos para el estudiante
+│   └── modulo-1/
+│       ├── lab-1-dashboard-tokens.md
+│       ├── lab-2-ab-testing.md            (por crear)
+│       └── lab-3-agent-manager.md         (por crear)
+├── assets/                                ← Recursos complementarios
+│   └── modulo-1/
+│       └── sesion-1.1/
+│           ├── recursos.md
+│           └── demo-code/                 (demo code de la sesión)
+└── spec/                                  ← Specs del proyecto TaskFlow AI (M2+)
+    └── (por crear en módulo 2)
 ```
 
 ### 12.2 Formatos de exportación

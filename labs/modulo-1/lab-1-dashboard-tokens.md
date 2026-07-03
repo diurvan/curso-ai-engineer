@@ -1077,10 +1077,6 @@ Listo para **obtener métricas en tiempo real del progreso de aprendizaje AI** �
 
 ---
 
-> **📌 Guion v1.0** – Listo para grabación. Tiempo estimado final: **40–45 min** (incluyendo screen recording del demo del Lab 1).
-
----
-
 ## 🔗 Recursos utilizados y referencias
 
 | Recurso | Link | Uso |
@@ -1124,31 +1120,3 @@ Listo para **obtener métricas en tiempo real del progreso de aprendizaje AI** �
 
 ---
 
-> **🎥 Explicación de como grabar este lab:** Grabar el demo screen (construcción de app + envio de métricas) junto con narración, subrayar los 5 años de estrategia de token economy, y luego cortar a segmentacion con tiempo para que el estudiante experimente.
-
-### 📹 Tareas de video/edicion:
-
-1. **Grabación** (0‑50 min)
-   - Introducción y promesa del lab (2 min)
-   - Configuración y navegación del proyecto (7 min)
-   - Construcción del componente dashboard (10 min)
-   - Creación del API route y setup de Supabase (8 min)
-   - Ejecutar el script de logs y verificar el dashboard (8 min)
-   - Despliegue final a Vercel (3 min)
-   - Preview del panel final con datos de ejemplo (3 min)
-
-2. **Edicion**
-   - Puntos clave: clicks, hovers, estados del gráfico.
-   - Insertar texto sobre cada paso.
-   - Sobreponer screenshots de código importante.
-   - Agregar bajo fondo musical (20 dB, aplica poco).
-   - Subtítulos: mostrar la transcripción a tiempo.
-
-3. **Efecto**
-   - **Bowl-cut**: Editar al final de la sesion con una toma del dashboard “live”.
-   - **Echo**: Reproducir exactamente cuando la gráfica actualiza.
-   - **Skip intro**: Velocidad máxima en la primera parte (promesa).
-
----
-
-*Este es un **modelo de referencia** que el instructor puede usar para grabar el video del Lab 1. El estudiante sigue una GUIA paso a paso para crear el mismo dashboard.*
