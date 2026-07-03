@@ -103,7 +103,7 @@ Cada módulo contiene:
 | **Helicone** | Monitoreo de tokens (free tier) | LangSmith, OpenRouter analytics |
 | **Ollama** | Modelos open-source locales | — |
 | **LangChain** | Orquestación RAG + agentes | — |
-| **Mermaid** | Diagramas como código | — |
+| **@curso-ai/metrics** | Paquete workspace para reporte automático al Dashboard | — |
 
 ### 2.2 Free Tiers que necesitarás crear
 
@@ -313,6 +313,11 @@ Semana 9-10
   - Usar prompt caching
   - Batch de operaciones similares
 
+**Archivos creados**
+- 📜 Guión: `scripts/modulo-1/sesion-1.2-primer-agente.md`
+- 📽️ Slides: `slides/modulo-1/sesion-1.2-primer-agente.md`
+- 📚 Recursos: `assets/modulo-1/sesion-1.2/recursos.md`
+
 **Recursos externos**
 - 📺 [Video: "Claude Code: Getting Started" (oficial Anthropic)]
 - 📝 [Documentación Claude Code CLI](https://docs.anthropic.com/en/docs/claude-code/overview)
@@ -321,9 +326,9 @@ Semana 9-10
 
 #### 🧪 Lab 2 — Test A/B Haiku vs Sonnet con Dashboard
 
-**Stack**: Claude Code CLI + Dashboard del Lab 1
+**Stack**: `@curso-ai/metrics` + Anthropic SDK + Dashboard del Lab 1
 
-**Objetivo**: Ejecutar un experimento controlado donde el agente genera meta-descripciones SEO para 10 páginas, primero con Haiku y luego con Sonnet. Medir:
+**Objetivo**: Ejecutar un experimento controlado donde el agente genera meta-descripciones SEO para 10 páginas, primero con Haiku y luego con Sonnet. **Todas las métricas se envían automáticamente al dashboard via `trackAnthropic()`** — el estudiante nunca anota tokens manualmente.
 - Tokens consumidos (input + output)
 - Costo por lote
 - Calidad del output (evaluación subjetiva 1-5)
@@ -331,17 +336,19 @@ Semana 9-10
 
 **Pasos del Lab**
 
-1. Preparar un prompt de generación de meta-descripciones para 10 páginas de un sitio web
-2. Ejecutar con Claude Code usando modelo Haiku (bandera `--model haiku`)
-3. Registrar métricas en el Dashboard vía API
-4. Ejecutar el mismo prompt con Sonnet
-5. Registrar métricas
-6. Comparar resultados en el Dashboard: costo vs calidad
-7. Escribir conclusión: ¿cuándo conviene cada uno?
+1. Instalar `@anthropic-ai/sdk` y `@curso-ai/metrics` (workspace local)
+2. Preparar un prompt de generación de meta-descripciones para 10 páginas
+3. Escribir script con `trackAnthropic()` para Haiku y Sonnet
+4. Ejecutar — `trackAnthropic()` extrae `usage` del response, calcula costo y envía al dashboard
+5. Evaluar calidad de ambos outputs
+6. Comparar en el Dashboard y escribir conclusión
+
+> ⚡ **Regla del curso**: Ningún lab pide al estudiante medir manualmente. `@curso-ai/metrics` (`trackAnthropic`, `trackOpenAI`, `syncHelicone`, `report`) automatiza el reporte en todos los labs 2-17.
 
 **Métrica de tokens**: ~50K-100K tokens
 **Duración estimada**: 2-3 horas
 **Criterio de éxito**: Dashboard mostrando la comparativa lado a lado.
+**Archivo**: `labs/modulo-1/lab-2-ab-testing.md`
 
 ---
 
@@ -908,23 +915,40 @@ curso-ai-engineer/
 ├── scripts/                               ← Guiones de grabación (video tutorial)
 │   └── modulo-1/
 │       ├── sesion-1.1-token-economy.md
-│       ├── sesion-1.2-primer-agente.md    (por crear)
+│       ├── sesion-1.2-primer-agente.md
 │       └── sesion-1.3-multi-agente.md     (por crear)
 ├── slides/                                ← Diapositivas (Reveal.js Markdown)
 │   └── modulo-1/
-│       └── sesion-1.1-token-economy.md
+│       ├── sesion-1.1-token-economy.md
+│       └── sesion-1.2-primer-agente.md
 ├── labs/                                  ← Ejercicios prácticos para el estudiante
 │   └── modulo-1/
 │       ├── lab-1-dashboard-tokens.md
-│       ├── lab-2-ab-testing.md            (por crear)
+│       ├── lab-2-ab-testing.md
 │       └── lab-3-agent-manager.md         (por crear)
 ├── assets/                                ← Recursos complementarios
 │   └── modulo-1/
-│       └── sesion-1.1/
+│       ├── sesion-1.1/
+│       │   ├── recursos.md
+│       │   └── demo-code/                 (demo code de la sesión)
+│       └── sesion-1.2/
 │           ├── recursos.md
-│           └── demo-code/                 (demo code de la sesión)
+│           └── demo-code/
 └── spec/                                  ← Specs del proyecto TaskFlow AI (M2+)
     └── (por crear en módulo 2)
+└── packages/                              ← Workspaces reutilizables
+    └── metrics/                           ← @curso-ai/metrics
+        ├── src/
+        │   ├── index.ts
+        │   ├── types.ts
+        │   ├── reporter.ts
+        │   ├── costs.ts
+        │   ├── providers/
+        │   │   ├── anthropic.ts           ← trackAnthropic()
+        │   │   └── openai.ts              ← trackOpenAI()
+        │   └── helicone.ts                ← syncHelicone()
+        ├── package.json
+        └── tsconfig.json
 ```
 
 ### 12.2 Formatos de exportación
