@@ -14,6 +14,14 @@ Usa esta skill cada vez que debas crear los archivos de una nueva sesión del cu
 | Recursos | `assets/modulo-N/sesion-N.X/recursos.md` | Links de referencia |
 | Demo code | `assets/modulo-N/sesion-N.X/demo-code/` | Código mostrado en el video |
 
+### Archivos adicionales por módulo
+
+| Módulo | Archivo | Ruta |
+|--------|---------|------|
+| M2+ | Spec de datos | `specs/database-spec.md` |
+| M2+ | Spec de API | `specs/api-spec.md` (futuro) |
+| Cualquiera | Plan de implementación | `plans/implementation-N.md` (opcional) |
+
 ### Formato del guión (scripts/)
 
 - Usar el template de `sesion-1.1-token-economy.md` como referencia
@@ -22,6 +30,8 @@ Usa esta skill cada vez que debas crear los archivos de una nueva sesión del cu
 - Incluir tabla de entregables al final
 - Cámara/slide instructions en **[CORCHETES]**
 - Diálogo del instructor en `>`
+- **El diálogo debe ser suficientemente detallado para grabar el video directamente**
+- Lenguaje claro, para programadores: usa analogías técnicas, evita academicismo
 
 ### Formato de slides (slides/)
 
@@ -33,17 +43,33 @@ Usa esta skill cada vez que debas crear los archivos de una nueva sesión del cu
 
 ### Formato del lab (labs/)
 
-- Usar el template de `labs/modulo-1/lab-1-dashboard-tokens.md`
-- Estructura: Descripción → Arquitectura → Setup → Schema → Código → Comandos → Criterios de éxito
+- Estructura: Descripción → Arquitectura → Setup → Código → Pasos → Criterios de éxito
 - Incluir código completo y ejecutable
 - NO incluir notas de producción de video (eso va en el guión)
 - NO incluir "Guion v1.0" — el lab no es el guión
+- Indicar métricas de tokens con el mecanismo correcto (trackAnthropic, trackOpenAI, Helicone, report)
+
+### Formato de un Spec OpenSpec (specs/)
+
+- Usar el template de `specs/database-spec.md` como referencia
+- Estructura OpenSpec:
+  1. **Metadata**: título, versión, autor, fecha
+  2. **Contexto**: propósito del spec, qué problema resuelve
+  3. **Definición de datos**: entidades con campos, tipos, constraints, relaciones
+  4. **Reglas de negocio**: validaciones, lógica de negocio
+  5. **Contratos de API**: endpoints, request/response (opcional en specs de datos)
+  6. **Seguridad**: políticas RLS, permisos
+  7. **Criterios de aceptación**: condiciones para dar el spec por validado
+- Lenguaje preciso, sin ambigüedad
+- Tipos explícitos (UUID, TEXT, INTEGER, TIMESTAMPTZ, etc.)
+- Ejemplos concretos de datos
 
 ### Cross-referencing
 
 - El guión debe referenciar al lab (ej: "En el Lab X vamos a...")
-- El lab debe listar prerequisitos (ej: "Requiere Lab 1 desplegado")
+- El lab debe listar prerequisitos (ej: "Requiere Lab X completado")
 - Los recursos deben estar en assets/ y también enlazados desde el plan
+- El spec debe referenciarse desde el lab (ej: "Usa el archivo specs/database-spec.md")
 - El plan (AI-Engineer-Roadmap-2026.md) debe reflejar los archivos creados
 
 ### Regla de automatización forzosa
@@ -71,5 +97,6 @@ Reglas:
 2. Leer el skill actual `crear-sesion.md` por si hay actualizaciones
 3. Leer la sesión anterior como template de referencia
 4. Crear todos los archivos (scripts, slides, lab, assets) en paralelo
-5. Verificar consistencia: ¿el script menciona el lab? ¿el lab menciona prerequisitos? ¿los paths existen?
-6. Actualizar el plan si la estructura cambia
+5. Si el módulo requiere spec: crearlo en `specs/` con protocolo OpenSpec
+6. Verificar consistencia: ¿el script menciona el lab? ¿el lab menciona prerequisitos? ¿los paths existen?
+7. Actualizar el plan si la estructura cambia

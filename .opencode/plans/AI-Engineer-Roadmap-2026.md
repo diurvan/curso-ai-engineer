@@ -913,29 +913,49 @@ curso-ai-engineer/
 ├── .opencode/plans/
 │   └── AI-Engineer-Roadmap-2026.md        ← Plan maestro (este archivo)
 ├── scripts/                               ← Guiones de grabación (video tutorial)
-│   └── modulo-1/
-│       ├── sesion-1.1-token-economy.md
-│       ├── sesion-1.2-primer-agente.md
-│       └── sesion-1.3-multi-agente.md     (por crear)
+│   ├── modulo-1/
+│   │   ├── sesion-1.1-token-economy.md
+│   │   ├── sesion-1.2-primer-agente.md
+│   │   └── sesion-1.3-multi-agente.md
+│   └── modulo-2/
+│       ├── sesion-2.1-sdd.md
+│       └── sesion-2.2-supabase.md
 ├── slides/                                ← Diapositivas (Reveal.js Markdown)
-│   └── modulo-1/
-│       ├── sesion-1.1-token-economy.md
-│       └── sesion-1.2-primer-agente.md
+│   ├── modulo-1/
+│   │   ├── sesion-1.1-token-economy.md
+│   │   ├── sesion-1.2-primer-agente.md
+│   │   └── sesion-1.3-multi-agente.md
+│   └── modulo-2/
+│       ├── sesion-2.1-sdd.md
+│       └── sesion-2.2-supabase.md
 ├── labs/                                  ← Ejercicios prácticos para el estudiante
-│   └── modulo-1/
-│       ├── lab-1-dashboard-tokens.md
-│       ├── lab-2-ab-testing.md
-│       └── lab-3-agent-manager.md         (por crear)
+│   ├── modulo-1/
+│   │   ├── lab-1-dashboard-tokens.md
+│   │   ├── lab-2-ab-testing.md
+│   │   └── lab-3-agent-manager.md
+│   └── modulo-2/
+│       ├── lab-4-spec-base-datos.md
+│       └── lab-5-migraciones-sql.md
 ├── assets/                                ← Recursos complementarios
-│   └── modulo-1/
-│       ├── sesion-1.1/
+│   ├── modulo-1/
+│   │   ├── sesion-1.1/
+│   │   │   ├── recursos.md
+│   │   │   └── demo-code/
+│   │   ├── sesion-1.2/
+│   │   │   ├── recursos.md
+│   │   │   └── demo-code/
+│   │   └── sesion-1.3/
+│   │       ├── recursos.md
+│   │       └── demo-code/
+│   └── modulo-2/
+│       ├── sesion-2.1/
 │       │   ├── recursos.md
-│       │   └── demo-code/                 (demo code de la sesión)
-│       └── sesion-1.2/
+│       │   └── demo-code/
+│       └── sesion-2.2/
 │           ├── recursos.md
 │           └── demo-code/
-└── spec/                                  ← Specs del proyecto TaskFlow AI (M2+)
-    └── (por crear en módulo 2)
+├── specs/                                 ← Specs OpenSpec (M2+)
+│   └── database-spec.md                   ← (creado)
 └── packages/                              ← Workspaces reutilizables
     └── metrics/                           ← @curso-ai/metrics
         ├── src/
