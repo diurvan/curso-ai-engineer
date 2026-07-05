@@ -1,0 +1,303 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "header",
+      "type": "rectangle",
+      "x": 0,
+      "y": 0,
+      "width": 1200,
+      "height": 80,
+      "backgroundColor": "#1e3a5f",
+      "strokeColor": "#1e3a5f"
+    },
+    {
+      "id": "logo",
+      "type": "text",
+      "x": 40,
+      "y": 25,
+      "text": "LOGO",
+      "fontSize": 24,
+      "foregroundColor": "#ffffff"
+    },
+    {
+      "id": "nav-item-1",
+      "type": "text",
+      "x": 400,
+      "y": 28,
+      "text": "Inicio",
+      "fontSize": 18,
+      "foregroundColor": "#ffffff"
+    },
+    {
+      "id": "nav-item-2",
+      "type": "text",
+      "x": 480,
+      "y": 28,
+      "text": "Productos",
+      "fontSize": 18,
+      "foregroundColor": "#94a3b8"
+    },
+    {
+      "id": "nav-item-3",
+      "type": "text",
+      "x": 590,
+      "y": 28,
+      "text": "Servicios",
+      "fontSize": 18,
+      "foregroundColor": "#94a3b8"
+    },
+    {
+      "id": "nav-item-4",
+      "type": "text",
+      "x": 690,
+      "y": 28,
+      "text": "Contacto",
+      "fontSize": 18,
+      "foregroundColor": "#94a3b8"
+    },
+    {
+      "id": "cta-button",
+      "type": "rectangle",
+      "x": 900,
+      "y": 15,
+      "width": 140,
+      "height": 50,
+      "backgroundColor": "#0ea5e9",
+      "strokeColor": "#0ea5e9",
+      "borderRadius": 8
+    },
+    {
+      "id": "cta-text",
+      "type": "text",
+      "x": 925,
+      "y": 28,
+      "text": "Comenzar",
+      "fontSize": 18,
+      "foregroundColor": "#ffffff"
+    },
+    {
+      "id": "hero-section",
+      "type": "rectangle",
+      "x": 0,
+      "y": 80,
+      "width": 1200,
+      "height": 400,
+      "backgroundColor": "#f8fafc",
+      "strokeColor": "#cbd5e1"
+    },
+    {
+      "id": "hero-title",
+      "type": "text",
+      "x": 100,
+      "y": 140,
+      "text": "Transformamos tus ideas\nen soluciones digitales",
+      "fontSize": 40,
+      "foregroundColor": "#1e3a5f"
+    },
+    {
+      "id": "hero-subtitle",
+      "type": "text",
+      "x": 100,
+      "y": 250,
+      "text": "Automatización inteligente con IA para impulsar tu negocio.",
+      "fontSize": 18,
+      "foregroundColor": "#64748b"
+    },
+    {
+      "id": "hero-cta",
+      "type": "rectangle",
+      "x": 100,
+      "y": 300,
+      "width": 200,
+      "height": 50,
+      "backgroundColor": "#0ea5e9",
+      "strokeColor": "#0ea5e9",
+      "borderRadius": 8
+    },
+    {
+      "id": "hero-cta-text",
+      "type": "text",
+      "x": 130,
+      "y": 315,
+      "text": "Conoce más",
+      "fontSize": 18,
+      "foregroundColor": "#ffffff"
+    },
+    {
+      "id": "hero-image",
+      "type": "rectangle",
+      "x": 650,
+      "y": 140,
+      "width": 450,
+      "height": 280,
+      "backgroundColor": "#e2e8f0",
+      "strokeColor": "#94a3b8",
+      "borderRadius": 12
+    },
+    {
+      "id": "hero-image-text",
+      "type": "text",
+      "x": 820,
+      "y": 270,
+      "text": "Imagen ilustrativa",
+      "fontSize": 16,
+      "foregroundColor": "#64748b"
+    },
+    {
+      "id": "features-section",
+      "type": "rectangle",
+      "x": 0,
+      "y": 480,
+      "width": 1200,
+      "height": 300,
+      "backgroundColor": "#ffffff",
+      "strokeColor": "#e2e8f0"
+    },
+    {
+      "id": "features-title",
+      "type": "text",
+      "x": 480,
+      "y": 510,
+      "text": "Nuestros Servicios",
+      "fontSize": 32,
+      "foregroundColor": "#1e3a5f"
+    },
+    {
+      "id": "card-1",
+      "type": "rectangle",
+      "x": 80,
+      "y": 580,
+      "width": 300,
+      "height": 160,
+      "backgroundColor": "#f8fafc",
+      "strokeColor": "#e2e8f0",
+      "borderRadius": 12
+    },
+    {
+      "id": "card-1-title",
+      "type": "text",
+      "x": 120,
+      "y": 610,
+      "text": "🤖 Automatización IA",
+      "fontSize": 20,
+      "foregroundColor": "#1e3a5f"
+    },
+    {
+      "id": "card-1-desc",
+      "type": "text",
+      "x": 120,
+      "y": 650,
+      "text": "Agentes inteligentes que\nautomatizan tus procesos.",
+      "fontSize": 14,
+      "foregroundColor": "#64748b"
+    },
+    {
+      "id": "card-2",
+      "type": "rectangle",
+      "x": 450,
+      "y": 580,
+      "width": 300,
+      "height": 160,
+      "backgroundColor": "#f8fafc",
+      "strokeColor": "#e2e8f0",
+      "borderRadius": 12
+    },
+    {
+      "id": "card-2-title",
+      "type": "text",
+      "x": 490,
+      "y": 610,
+      "text": "📊 Analytics",
+      "fontSize": 20,
+      "foregroundColor": "#1e3a5f"
+    },
+    {
+      "id": "card-2-desc",
+      "type": "text",
+      "x": 490,
+      "y": 650,
+      "text": "Dashboards y métricas\npara decisiones data-driven.",
+      "fontSize": 14,
+      "foregroundColor": "#64748b"
+    },
+    {
+      "id": "card-3",
+      "type": "rectangle",
+      "x": 820,
+      "y": 580,
+      "width": 300,
+      "height": 160,
+      "backgroundColor": "#f8fafc",
+      "strokeColor": "#e2e8f0",
+      "borderRadius": 12
+    },
+    {
+      "id": "card-3-title",
+      "type": "text",
+      "x": 860,
+      "y": 610,
+      "text": "🔒 Seguridad",
+      "fontSize": 20,
+      "foregroundColor": "#1e3a5f"
+    },
+    {
+      "id": "card-3-desc",
+      "type": "text",
+      "x": 860,
+      "y": 650,
+      "text": "RLS, autenticación y\ncumplimiento empresarial.",
+      "fontSize": 14,
+      "foregroundColor": "#64748b"
+    },
+    {
+      "id": "contact-section",
+      "type": "rectangle",
+      "x": 0,
+      "y": 780,
+      "width": 1200,
+      "height": 200,
+      "backgroundColor": "#1e3a5f",
+      "strokeColor": "#1e3a5f"
+    },
+    {
+      "id": "contact-title",
+      "type": "text",
+      "x": 450,
+      "y": 820,
+      "text": "Contáctanos",
+      "fontSize": 28,
+      "foregroundColor": "#ffffff"
+    },
+    {
+      "id": "contact-subtitle",
+      "type": "text",
+      "x": 380,
+      "y": 870,
+      "text": "contato@taskflowai.com  |  +51 999 888 777",
+      "fontSize": 16,
+      "foregroundColor": "#94a3b8"
+    },
+    {
+      "id": "footer",
+      "type": "rectangle",
+      "x": 0,
+      "y": 980,
+      "width": 1200,
+      "height": 60,
+      "backgroundColor": "#0f172a",
+      "strokeColor": "#0f172a"
+    },
+    {
+      "id": "footer-text",
+      "type": "text",
+      "x": 400,
+      "y": 1000,
+      "text": "© 2026 TaskFlow AI. Todos los derechos reservados.",
+      "fontSize": 14,
+      "foregroundColor": "#64748b"
+    }
+  ]
+}
